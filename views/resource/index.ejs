@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <title>67</title>
+
+    <style type="text/css">
+      .topic-col {
+        min-width: 16em;
+      }
+      .created-col,
+      .last-post-col {
+        min-width: 12em;
+      }
+    </style>
+  </head>
+  <body>
+     <nav class="navbar bg-dark navbar-dark navbar-expand-md fixed-top">
+      <a href="/" class="navbar-brand"><aria-hidden="true"></i>67</a>
+      <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav" id="navScrollspy">
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/member">Become A Member</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/testimonies">Testimonies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/moderator">Become a Moderator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/resource">Resources</a>
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+   <main>
+      <div class="container mt-3 mb-5">
+        
+        <div class="row">
+          
+          <div class="col-12 col-lg-6 pt-3">
+            <main>
+              <h2>Categories</h2>
+              <hr>
+              
+              <ul class="list-unstyled">
+              <% resource.forEach(function(resource){ %>
+                <li><a href="/resource/<%=resource._id%> %>"><h3><%= resource.name %></h3></a></li>
+                <% }); %>
+              </ul>
+              <hr>
+              
+            </main>
+          </div>
+          
+        </div>        
+      </div>
+    </main>
+   <footer class="small bg-light">
+      <div class="container py-3 py-sm-5">
+        <div class="row">
+         
+          
+          
+          
+        <ul class="list-inline mt-2 mb-0 text-center">
+          <li class="list-inline-item">&copy; 2018 67Pastors</li>
+          <li class="list-inline-item">All rights reserved.</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
